@@ -4,7 +4,7 @@
 #
 Name     : R-AMORE
 Version  : 0.2.15
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/AMORE_0.2-15.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/AMORE_0.2-15.tar.gz
 Summary  : A MORE flexible neural network package
