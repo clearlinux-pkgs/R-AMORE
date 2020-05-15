@@ -4,7 +4,7 @@
 #
 Name     : R-AMORE
 Version  : 0.2.16
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/AMORE_0.2-16.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/AMORE_0.2-16.tar.gz
 Summary  : Artificial Neural Network Training and Simulating
@@ -26,21 +26,22 @@ lib components for the R-AMORE package.
 
 %prep
 %setup -q -c -n AMORE
+cd %{_builddir}/AMORE
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581526820
+export SOURCE_DATE_EPOCH=1589510540
 
 %install
-export SOURCE_DATE_EPOCH=1581526820
+export SOURCE_DATE_EPOCH=1589510540
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
