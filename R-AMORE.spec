@@ -4,7 +4,7 @@
 #
 Name     : R-AMORE
 Version  : 0.2.16
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/AMORE_0.2-16.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/AMORE_0.2-16.tar.gz
 Summary  : Artificial Neural Network Training and Simulating
